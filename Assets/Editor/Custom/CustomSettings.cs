@@ -6,6 +6,7 @@ using UnityEditor;
 
 using BindType = ToLuaMenu.BindType;
 using System.Reflection;
+using CSharp;
 
 public static class CustomSettings
 {
@@ -151,7 +152,8 @@ public static class CustomSettings
         _GT(typeof(Resources)),     
         _GT(typeof(LuaProfiler)),
         
-        _GT(typeof(RotateSelf))
+        _GT(typeof(RotateSelf)),
+        _GT(typeof(OutputString))
     };
 
     public static List<Type> dynamicList = new List<Type>()
